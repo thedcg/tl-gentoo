@@ -18,7 +18,7 @@ RUN date --iso-8601=ns\
 	app-text/dos2unix\
 	perl-core/Encode\
 	dev-perl/JSON\
-	net-misc/curl\
+#	net-misc/curl\
  && date --iso-8601=ns
 
 # 終了

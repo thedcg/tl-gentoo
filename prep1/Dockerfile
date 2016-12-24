@@ -13,15 +13,13 @@ FROM thedcg/gentoo-llvm:latest
 # パッケージ
 
 RUN date --iso-8601=ns;\
- echo '>=dev-lang/perl-5.22.2' >> /etc/portage/package.mask;\
- /usr/bin/env CONFIG_PROTECT_MASK="/etc"\
  emerge --autounmask-write --verbose-conflicts\
  dev-vcs/git\
  perl-core/Encode\
  dev-perl/JSON\
  app-arch/zip\
  app-text/dos2unix\
- net-misc/curl\
+# net-misc/curl\
  app-text/texlive\
  dev-texlive/texlive-fontsrecommended\
  dev-texlive/texlive-fontsextra\

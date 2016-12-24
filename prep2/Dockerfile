@@ -48,12 +48,12 @@ RUN date --iso-8601=ns\
 	sys-libs/binutils-libs\
 	virtual/jpeg\
 	virtual/perl-Digest-MD5\
+	virtual/perl-Digest-SHA\
+	virtual/perl-IO\
 	virtual/perl-MIME-Base64\
 	virtual/perl-Scalar-List-Utils\
+	virtual/perl-libnet\
 	virtual/ttf-fonts\
-	'='virtual/perl-Digest-SHA-5.950.0-r4\
-	'='virtual/perl-IO-1.350.0-r2\
-	'='virtual/perl-libnet-3.50.0-r2\
  && date --iso-8601=ns
 
 # 終了
