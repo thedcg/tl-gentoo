@@ -13,6 +13,7 @@ FROM thedcg/gentoo-llvm:latest
 # パッケージ
 
 RUN date --iso-8601=ns;\
+ /usr/bin/env CONFIG_PROTECT_MASK="/etc"\
  emerge --autounmask-write --verbose-conflicts\
  dev-vcs/git\
  perl-core/Encode\
