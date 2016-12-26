@@ -14,7 +14,7 @@ FROM thedcg/tl-gentoo_prep8:latest
 RUN date --iso-8601=ns\
  && emerge\
  app-text/pandoc\
- dev-haskell/pandoc-citeproc\
+# dev-haskell/pandoc-citeproc\
 # dev-haskell/pandoc-types\
 # && emerge --depclean\
 # && eclean-dist --deep\
