@@ -15,11 +15,11 @@ RUN date --iso-8601=ns\
  && emerge\
  app-text/pandoc\
  dev-haskell/pandoc-citeproc\
- dev-haskell/pandoc-types\
- && emerge --depclean\
- && eclean-dist --deep\
- && echo '======== equery list * ========'\
- && equery list '*'\
+# dev-haskell/pandoc-types\
+# && emerge --depclean\
+# && eclean-dist --deep\
+# && echo '======== equery list * ========'\
+# && equery list '*'\
  && date --iso-8601=ns\
 
 #RUN eclean-pkg --deep
